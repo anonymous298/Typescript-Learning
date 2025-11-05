@@ -62,3 +62,53 @@ abcd(true)
 
 // Intersection types
 
+type User1 = {
+    name: string,
+    email: string,
+}
+
+type Admin = User1 & {
+    getDetails(user: string): void,
+    permission: boolean,
+
+}
+
+function something(arg: Admin) {
+
+}
+
+function method(user: string): void {
+    console.log('')
+}
+
+something({
+    name : 'talha',
+    email : 'talhha@gmail.com',
+    getDetails : method,
+    permission: true
+})
+
+// Interface helps us to create object shape
+
+interface random {
+    a: string,
+    b: number,
+    c: boolean
+}
+
+let randomObj: random = {
+    a : '',
+    b : 2,
+    c : true
+}
+
+// type help us to check values and its types
+
+type abc = {
+    a: string,
+    b: number,
+    c: null,
+    method(inp: number): string,
+
+}
+
