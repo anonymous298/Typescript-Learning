@@ -113,3 +113,15 @@ var User = /** @class */ (function () {
 var user1 = new User('talha', 18);
 user1.setName = 'anonymous';
 console.log(user1.getName);
+// Static
+var ABCDE = /** @class */ (function () {
+    function ABCDE() {
+    }
+    ABCDE.method = function () {
+        return 3.14159265;
+    };
+    ABCDE.name = 'talha';
+    return ABCDE;
+}());
+console.log(ABCDE.method());
+console.log(ABCDE.name);

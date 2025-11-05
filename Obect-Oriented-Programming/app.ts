@@ -110,3 +110,18 @@ let user1 = new User('talha', 18);
 user1.setName = 'anonymous'
 
 console.log(user1.getName)
+
+
+// Static
+
+class ABCDE {
+    static name = 'talha'
+ 
+    static method() {
+        return 3.14159265
+    }
+}
+
+console.log(ABCDE.method())
+console.log(ABCDE.name)
+
