@@ -42,5 +42,26 @@ rest(123,231,23,23,2,32,2,3,4,3,3)
 console.log(...[1,2,3,4,5])
 
 
-// Function overloading
+//Generics
+// Generic functions
+// Generic interfaces
+// Generic classes
+
+// Not Good
+function something(a: any) { 
+    
+}
+
+something('talha')
+something(2)
+something(true)
+
+// Generic function example
+
+function generic<T>(value: T): T {
+    return value
+}
+
+console.log(generic<string>('tlahha'))
+console.log(generic(23)) 
 

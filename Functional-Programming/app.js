@@ -27,4 +27,19 @@ function rest() {
 rest(123, 231, 23, 23, 2, 32, 2, 3, 4, 3, 3);
 /// Spread Operator 
 console.log.apply(console, [1, 2, 3, 4, 5]);
-// Function overloading
+//Generics
+// Generic functions
+// Generic interfaces
+// Generic classes
+// Not Good
+function something(a) {
+}
+something('talha');
+something(2);
+something(true);
+// Generic function example
+function generic(value) {
+    return value;
+}
+console.log(generic('tlahha'));
+console.log(generic(23));
