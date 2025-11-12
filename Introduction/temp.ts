@@ -22,9 +22,13 @@
 // }
 
 
+let age: number = 17;
+let name: string = "Talha";
+let isLearning: boolean = true;
+
+
 let username: string = 'talha';
 username = 10;   // ❌ Error: Type 'number' is not assignable to type 'string'
-
 
 
 // Normal JS version like
