@@ -100,3 +100,21 @@ function abcf(): never {
 
 abcf();
 console.log('Hello World')
+
+
+let age: number = 18;
+let name: string = "Talha";
+let isActive: boolean = true;
+let nothing: null = null;
+
+
+let names: string[] = ["Talha", "Ali", "Ahmed"];
+let numbers: number[] = [1, 2, 3];
+
+
+enum User {
+  Name = "Talha",
+  Email = "talha@example.com"
+}
+
+User.Email
