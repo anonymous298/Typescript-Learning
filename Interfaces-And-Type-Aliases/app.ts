@@ -112,3 +112,43 @@ type abc = {
 
 }
 
+type abcdef = number | string
+
+interface User {
+  name: string;
+  age: number;
+  gender: string;
+}
+
+let a: User = {
+  name: 'Talha',
+  age: 18,
+  gender: 'male'
+};
+
+
+interface User {
+  name: string;
+  age: number;
+  gender: string;
+}
+
+function greet(user: User) {
+  console.log(`Hello ${user.name}, age ${user.age}`);
+}
+
+greet({ name: 'Talha', age: 18, gender: 'male' });
+
+
+type User = {
+  name: string;
+  age: number;
+  gender: string;
+};
+
+let b: User = { name: 'Talha', age: 18, gender: 'male' };
+
+type ID = string | number;
+
+let userId1: ID = 123;
+let userId2: ID = "abc123";
