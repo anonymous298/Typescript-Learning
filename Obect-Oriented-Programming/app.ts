@@ -125,3 +125,16 @@ class ABCDE {
 console.log(ABCDE.method())
 console.log(ABCDE.name)
 
+
+
+class ABDEF {
+    constructor(public name: string, public age: number) {}
+
+    greet(fromName: string): string {
+        return `Hello ${this.name} from ${fromName}`;
+    }
+}
+
+let obj: ABDEF = new ABDEF('Talha', 18);
+console.log(obj.age);           // 18
+console.log(obj.greet('Ali'));  // Hello Talha from Ali
