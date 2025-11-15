@@ -5,9 +5,9 @@
 // Rest parameters
 // Overloads
 
-function doSomething(name: string, age: number): void {
+// function doSomething(name: string, age: number): void {
     
-}
+// }
 
 const func = ():void => {
 
@@ -58,12 +58,12 @@ something(true)
 
 // Generic function example
 
-function generic<T>(value: T): T {
-    return value
-}
+// function generic<T>(value: T): T {
+//     return value
+// }
 
-console.log(generic<string>('tlahha'))
-console.log(generic(23)) 
+// console.log(generic<string>('tlahha'))
+// console.log(generic(23)) 
 
 // Type assertion
 
@@ -110,3 +110,27 @@ let ca = new Cat()
 
 console.log(ca instanceof Animal)
 console.log(ca instanceof Cat)
+
+//Function keyword example
+function functionExample(name: string): string {
+    return `Hi, ${name}` 
+}
+
+functionExample('talha')
+
+
+//Arrow function example
+const arrowFunctionExample = (a: number, b: number): void {
+    console.log(a + b);
+}
+
+arrowFunctionExample(10, 10); 
+
+
+//Generic function
+function genericFunction<T>(val: T): T {
+    return val
+}
+
+console.log(genericFunction<string>('talha')) //1 way to do it
+console.log(genericFunction(10)) //2 way to do it
